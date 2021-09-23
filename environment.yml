@@ -3,4 +3,18 @@ channels:
 dependencies:
   - r-base=3.6
   - r-tidyverse
-  
+  - bioconda::bioconductor-deseq2
+  - bioconda::bioconductor-variantannotation
+  - bioconda::bioconductor-genomicranges
+  - bioconda::bioconductor-rtracklayer
+  - bioconda::bioconductor-gviz
+  - conda-forge::r-knitr
+  - conda-forge::r-rmarkdown
+  - bioconda::bioconductor-chipseq
+  - bioconda::macs2
+  - bioconda::salmon
+  - bioconda::bioconductor-tximport
+  - conda-forge::r-venndiagram
+  - bioconda::bioconductor-tximeta
+  - conda-forge::r-qqman
+  - conda-forge::r-plotly
