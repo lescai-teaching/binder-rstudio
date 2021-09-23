@@ -18,3 +18,4 @@ dependencies:
   - bioconda::bioconductor-tximeta
   - conda-forge::r-qqman
   - conda-forge::r-plotly
+  - conda-forge::r-rcpp
