@@ -1,0 +1,47 @@
+
+apt-get clean
+apt-get update
+apt-get install -y \
+    libcurl4-openssl-dev \
+    libfontconfig1-dev \
+    libxml2 \
+    libxml2-dev \
+    libz-dev \
+    libbz2-dev \
+    libclang-dev \
+    liblzma-dev \
+    python3 \
+    python3-pip \
+    wget
+
+Rscript -e "install.packages('BiocManager', repos = 'https://cloud.r-project.org')"
+Rscript -e "BiocManager::install(c(\
+    'tidyverse', \
+    'Gviz', \
+    'VariantAnnotation', \
+    'GenomicFeatures', \
+    'rtracklayer', \
+    'Biostrings', \
+    'knitr'\
+    ))"
+
+Rscript -e "BiocManager::install(c('ggtree'))"
+
+Rscript -e "BiocManager::install(c(\
+    'msa', \
+    'seqinr', \
+    'plotly'\
+    ))"
+
+Rscript -e "install.packages('kableExtra', repos = 'https://cloud.r-project.org')"
+Rscript -e "install.packages('remotes', repos = 'https://cloud.r-project.org')"
+
+Rscript -e "BiocManager::install(c(\
+    'DESeq2', \
+    'tximport', \
+    'tximeta' \
+    ))"
+
+Rscript -e "BiocManager::install(c(\
+    'chipseq'\
+    ))"
